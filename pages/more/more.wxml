@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container" class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="userinfo_first" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击获取个性界面 </button>
+    <block wx:else>
+      <!--<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>-->
+      <image class="userinfo-avatar" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531226373829&di=d9d060eb04188fc86719745fdb348aae&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fa%2F59b74bdba14d1.jpg" mode="cover"></image>
+      <text class="userinfo-nickname">2019 年</text>
+     <text class="userinfo-nickname">{{nickname}}，一起做时间的朋友</text>
+
+      <view class="info_split">
+         <text class="info_split"> -------------------------------------------------- </text>
+      </view>
+      <view class="goddes_value">
+           <text class="other_refer">截图扫码或微信搜索关注，了解更多</text>
+      </view>
+      <view>
+           <image src="https://i.imgur.com/juBKMkS.jpg" class="gzh" mode="cover"></image>
+      </view>
+
+      <view class="info_split">
+         <text class="info_split"> -------------------------------------------------- </text>
+      </view>
+
+      <view class="other_info">
+        <button class='return_main' bindtap='about_xinrui'>关于新睿智业</button>
+      </view>
+
+      <view class="goddes_value">
+           <text class="other_refer">友情链接（网址或公众号点击可复制）</text>
+        </view>
+        <view>
+          <text class="compy_intro">新睿PMP培训官网：</text><text class="fesval_info" selectable='true'>http://www.51pm.cn/</text>
+        </view>
+        <view>
+          <text class="compy_intro">新睿PMP的公众号：</text><text class="fesval_info" selectable='true'>杭州新睿智业有限公司</text>
+        </view>
+        <view>
+           <image src="https://i.imgur.com/kHtwhyj.png" class="xinrui_log" mode="cover"></image>
+        </view>
+        <view class="other_info">
+        <button class='return_main' bindtap='return_main'>返回首页</button>
+      </view>
+    </block>
+  </view>
+
+</view>
+
+

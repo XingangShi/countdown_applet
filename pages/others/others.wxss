@@ -1,0 +1,201 @@
+/**index.wxss**/
+.userinfo {
+  margin-top: px;
+  //display: flex;
+  //flex-direction: column;
+  align-items: center;
+}
+
+.container {
+}
+
+.userinfo_first {
+  margin-top: 0px;
+  //display: flex;
+  //flex-direction: column;
+  margin: 100px 0 0 0px;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 80px;
+  height: 50px;
+  //margin: 5rpx;
+  margin-top: 10px;
+  //border-radius: 25%;
+}
+
+.userinfo-nickname {
+  margin-top: 10px;
+  font-family: "楷体","楷体_GB2312";
+  color: #696969;
+  font-size:1.0em;
+}
+
+.other_info {
+  margin-top: 5px;
+  font-family: "Courier New","Courier New";
+  color: #000000;
+  font-size:0.9em;
+  text-align: left;
+}
+
+.other_refer {
+  margin-top: 5px;
+  font-family: "Courier New","Courier New";
+  color: #000000;
+  font-size:0.90em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.goddes_value {
+  margin-top: 15px;
+  font-family: "Courier New","Courier New";
+  color: #f87;
+  font-size:0.9em;
+  text-align: left;
+}
+
+.usermotto {
+  margin-top: 10px;
+  font-family: "隶书", "隶书";
+  font-size:1.0em;
+  color: #000000;
+}
+
+
+.info_split {
+  margin-top: 4px;
+  font-family: "隶书", "隶书";
+  font-size:0.8em;
+  color: #2F4F4F;
+}
+
+.bound_info {
+  margin-top: 10px;
+  font-family: "楷体","楷体_GB2312";
+  color: #000000;
+  font-size:0.9em;
+}
+
+.bound_info_desc {
+  margin-top: 10px;
+  font-family: "Courier New","Courier New";
+  color: #008000;
+  font-size:0.9em;
+  text-align: right;
+}
+
+.bound_info_ins {
+  margin-top: 10px;
+  font-family: "Courier New","Courier New";
+  color: #DC143C;
+  font-size:0.9em;
+  text-align: right;
+}
+
+.compy_intro {
+  margin-top: 10px;
+  font-family: "楷体","楷体_GB2312";
+  font-size:0.75em;
+  color: #000000;
+}
+
+.fesval_info {
+  margin-top: 10px;
+  font-family: "楷体","楷体_GB2312";
+  font-size:0.75em;
+  color: blue;
+}
+
+.cur_time {
+  margin-top: 10px;
+  font-family: "楷体","楷体_GB2312";
+  font-size:0.95em;
+  color: #000000;
+}
+
+.remain_title {
+  margin-top: 1px;
+  font-family: "Lucida Console","Lucida Console";
+  font-size:0.9em;
+  margin: 10px 0 0 0px;
+  text-align: left;
+  color: #000000;
+}
+
+.remain_percent {
+  margin-top: 12px;
+  font-family: "Courier New","Courier New";
+  font-size:1.00em;
+  margin: 12px 0 0 0px;
+  color:#1E90FF;
+  text-align: left;
+}
+
+.remain_days {
+  text-align: left;
+  margin-top: 8px;
+  font-family: "Courier New","Courier New";
+  font-size:0.90em;
+  margin: 8px 0px 0px 70px;
+  color:#FF69B4;
+  width:300px;
+}
+
+.remain_hours {
+  text-align: left;
+  margin-top: 8px;
+  font-family: "Courier New","Courier New";
+  margin: 8px 0px 0px 70px;
+  font-size:0.80em;
+  color:#FF00FF;
+  width:300px;
+}
+
+
+.gzh {
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 7px;
+  color: black;
+  border: 1px solid gray;
+  height:2100px;
+  width:300px;
+
+}
+
+.recommend_read {
+  border-radius: 5px;
+  font-size: 7px;
+  color: black;
+  border: 1px solid #00FFFF;
+  height:18px;
+  width:60px;
+  margin: 8px 0px 0px -120px;
+
+}
+
+.xinrui_log {
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 7px;
+  color: black;
+  border: 1px solid gray;
+  height:90px;
+  width:250px;
+}
+
+
+.time_intro {
+  margin-top: 10px;
+  font-family: "楷体","楷体_GB2312";
+  font-size:0.8em;
+  color: red;
+  left: 50%;
+  word-break:break-all;
+  display:-webkit-box;
+  overflow:hidden;
+  -webkit-line-clamp:20;
+}

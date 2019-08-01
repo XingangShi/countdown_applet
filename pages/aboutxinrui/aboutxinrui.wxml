@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<view class="container" class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="userinfo_first" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击获取个性界面 </button>
+    <block wx:else>
+      <!--<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>-->
+      <image class="userinfo-avatar" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531226373829&di=d9d060eb04188fc86719745fdb348aae&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fa%2F59b74bdba14d1.jpg" mode="cover"></image>
+      <text class="userinfo-nickname">2019 年</text>
+     <text class="userinfo-nickname">{{nickname}}，一起做时间的朋友</text>
+
+      <view class="info_split">
+         <text class="info_split"> -------------------------------------------------- </text>
+      </view>
+      <view class="other_info">
+        <button class='return_main' bindtap='pmp_exam'>报考PMP</button>
+      </view>
+      <view class="goddes_value">
+           <text class="other_refer">关于新睿智业</text>
+      </view>
+
+      <view>
+          <text class="pmp_intro">杭州新睿智业有限公司（简称“新睿智业”）成立于2002年\n</text>
+          <text class="pmp_intro">，同年由国家外国专家局培训中心授权项目管理（PMP）培\n</text>
+          <text class="pmp_intro">训和考试服务，至今已专注经营十七年，服务质量持续得到\n</text>
+          <text class="pmp_intro">华为、中国石化、中船重工、中国移动、中国电信、国家核\n</text>
+          <text class="pmp_intro">电、阿里巴巴、网易等企业的信任，成为他们指定或主要的\n</text>
+          <text class="pmp_intro">项目管理培训和定制课程培训供应商。\n</text>
+      </view>
+
+      <view class="goddes_value">
+           <text class="other_refer"> 六大业务范围 </text>
+      </view>
+
+      <view  class="goddes_value">
+          <text class="pmp_intro">1．PMP（项目管理）培训；\n</text>
+          <text class="pmp_intro">2．一级建造师和二级建造师培训；\n</text>
+          <text class="pmp_intro">3．注册安全工程师和注册消防工程师培训；\n</text>
+          <text class="pmp_intro">4．咨询式培训（根据企业需求定制课程）；\n</text>
+          <text class="pmp_intro">5．企业管理咨询顾问；\n</text>
+          <text class="pmp_intro">6．竞赛定制。\n</text>
+      </view>
+
+
+      <view class="goddes_value">
+           <text class="other_refer"> 公司荣誉 </text>
+      </view>
+
+      <view  class="goddes_value">
+          <text class="pmp_intro">报考资格问题欢迎 咨询在线客服 或 致电新睿智业考务部：\n</text>
+          <text class="pmp_intro">多次被国家外专局培训中心评为“全国优秀培训机构”和“全国\n</text>
+          <text class="pmp_intro">优秀考务团队”，入选了《项目管理技术》杂志“全国十佳项目\n</text>
+          <text class="pmp_intro">管理咨询机构”，参与PMI® 项目管理系列标准的修订或翻译工\n</text>
+          <text class="pmp_intro">作，是国内领先的项目管理整体解决方案供应商。</text>
+      </view>
+
+
+      <view class="goddes_value">
+           <text class="other_refer"> 公司的价值观 </text>
+      </view>
+
+      <view  class="goddes_value">
+          <text class="pmp_intro">公司的价值观是：\n</text>
+          <text class="pmp_intro">以良心做事为根本，以客户需求为中心，以完美交付为目标，\n</text>
+          <text class="pmp_intro">以艰苦不懈的努力为表率，坚持自我迭代，在为客户创造价值\n</text>
+          <text class="pmp_intro">的同时，实现个人与公司共同成长。</text>
+      </view>
+
+      <view class="goddes_value">
+           <text class="other_refer"> 公司的目标 </text>
+      </view>
+
+      <view  class="goddes_value">
+          <text class="pmp_intro">公司的目标是：\n</text>
+          <text class="pmp_intro">实现员工物质与精神的双重愉悦，共同打造“百年老店”。</text>
+      </view>
+
+
+
+      <view>
+          <image src="https://ws3.sinaimg.cn/large/006tNbRwly1fyr7ieu43gj31900u0npf.jpg" class="pmp" mode="cover"></image>
+      </view>
+
+
+      <view class="info_split">
+         <text class="info_split"> -------------------------------------------------- </text>
+      </view>
+      <view class="goddes_value">
+           <text class="other_refer">友情链接（网址或公众号点击可复制）</text>
+        </view>
+        <view>
+          <text class="compy_intro">新睿PMP培训官网：</text><text class="fesval_info" selectable='true'>http://www.51pm.cn/</text>
+        </view>
+        <view>
+          <text class="compy_intro">新睿PMP的公众号：</text><text class="fesval_info" selectable='true'>杭州新睿智业有限公司</text>
+        </view>
+        <view>
+           <image src="https://i.imgur.com/kHtwhyj.png" class="xinrui_log" mode="cover"></image>
+        </view>
+      <view class="other_info">
+        <button class='return_main' bindtap='return_main'>返回首页</button>
+      </view>
+    </block>
+  </view>
+
+</view>
+
+

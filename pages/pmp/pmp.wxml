@@ -1,0 +1,104 @@
+<!--index.wxml-->
+<view class="container" class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="userinfo_first" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击获取个性界面 </button>
+    <block wx:else>
+      <!--<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>-->
+      <image class="userinfo-avatar" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531226373829&di=d9d060eb04188fc86719745fdb348aae&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fa%2F59b74bdba14d1.jpg" mode="cover"></image>
+      <text class="userinfo-nickname">2019 年</text>
+     <text class="userinfo-nickname">{{nickname}}，一起做时间的朋友</text>
+
+      <view class="info_split">
+         <text class="info_split"> -------------------------------------------------- </text>
+      </view>
+      <view class="other_info">
+        <button class='return_main' bindtap='about_xinrui'>关于新睿智业</button>
+      </view>
+      <view class="goddes_value">
+           <text class="other_refer">2019 年的 PMP 项目管理认证培训考试时间</text>
+      </view>
+
+      <view>
+
+          <text class="time_intro">第一季度考试时间：2019 年 3 月 30 日。\n</text>
+          <text class="time_intro">第二季度考试时间：2019 年 6 月 22 日。\n</text>
+          <text class="time_intro">第三季度考试时间：2019 年 9 月 7 日。\n</text>
+          <text class="time_intro">第四季度考试时间：2019 年 12 月 7 日。\n</text>
+
+          <image src="https://i.imgur.com/5EJ6XFh.jpg" class="pmp" mode="cover"></image>
+      </view>
+
+
+      <view class="goddes_value">
+           <text class="other_refer"> PMP 是什么？</text>
+      </view>
+
+      <view>
+          <text class="pmp_intro">（Project Management Professional）指项目管理专\n</text>
+          <text class="pmp_intro">业人士（人事）资格认证。\n</text>
+          <text class="pmp_intro">美国项目管理协会（PMI）举办的项目管理专业人员（PMP\n</text>
+          <text class="pmp_intro">）认证考试在全球190多个国家和地区推广，是目前项目管\n</text>
+          <text class="pmp_intro">理领域含金量最高的认证。获取 PMP 证书，不仅提升项目\n</text>
+          <text class="pmp_intro">经理的项目管理水平，也直接体现项目经理的个人竞争力，\n</text>
+          <text class="pmp_intro">是项目管理专业人士身份的象征。\n</text>
+          <text class="pmp_intro">目前全球有八十七万 PMP，中国也已经有 13 万多人通过 \n</text>
+          <text class="pmp_intro">PMP 认证考试，PMP 证书正获得越来越多的职业人士的青\n</text>
+          <text class="pmp_intro">睐，被誉为与 MBA、MPA 齐名的全球三大管理证书。\n</text>
+          <text class="pmp_intro">对于企业来说，应用 PMP 管理，可以使项目时间缩短 \n</text>
+          <text class="pmp_intro">10%-30%，使成本降低 8% 以上，而对于个人来说，PMP\n</text>
+          <text class="pmp_intro"> 培训可以提高人解决实际项目问题的能力，改进个人的\n</text>
+          <text class="pmp_intro">思维方式，最重要的，是可以升职加薪。</text>
+      </view>
+
+      <view class="goddes_value">
+           <text class="other_refer"> 什么人群适合 PMP？</text>
+      </view>
+
+      <view  class="goddes_value">
+          <text class="pmp_intro">1．准备参加 PMP® 资格认证考试的人士；\n</text>
+          <text class="pmp_intro">2．企业高层、中层管理者、各部门经理；\n</text>
+          <text class="pmp_intro">3．项目经理、项目主管；\n</text>
+          <text class="pmp_intro">4．系统整合工程师；系统开发工程师、及项目团队成员；\n</text>
+          <text class="pmp_intro">5．企业人力资源部，行销企划人员、行销业务人员；\n</text>
+          <text class="pmp_intro">6．愿意增进职场必备技能，对项目管理有兴趣的人士。\n</text>
+      </view>
+
+
+      <view class="goddes_value">
+           <text class="other_refer"> 我也想考 PMP 证，提升自己！ </text>
+      </view>
+
+      <view  class="goddes_value">
+          <text class="baoming">报考资格问题欢迎 咨询在线客服 或 致电新睿智业考务部：\n</text>
+          <text class="baoming">0571-87987920。\n</text>
+      </view>
+
+      <view>
+          <image src="https://ws2.sinaimg.cn/large/006tNbRwly1fyr4xwprywj30oh0ipdhb.jpg" class="pmp" mode="cover"></image>
+      </view>
+
+
+      <view class="info_split">
+         <text class="info_split"> -------------------------------------------------- </text>
+      </view>
+      <view class="goddes_value">
+           <text class="other_refer">友情链接（网址或公众号点击可复制）</text>
+        </view>
+        <view>
+          <text class="compy_intro">新睿PMP培训官网：</text><text class="fesval_info" selectable='true'>http://www.51pm.cn/</text>
+        </view>
+        <view>
+          <text class="compy_intro">新睿PMP的公众号：</text><text class="fesval_info" selectable='true'>杭州新睿智业有限公司</text>
+        </view>
+        <view>
+           <image src="https://i.imgur.com/kHtwhyj.png" class="xinrui_log" mode="cover"></image>
+        </view>
+      <view class="other_info">
+        <button class='return_main' bindtap='return_main'>返回首页</button>
+      </view>
+    </block>
+  </view>
+
+</view>
+
+

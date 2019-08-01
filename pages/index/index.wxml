@@ -1,0 +1,105 @@
+<!--index.wxml-->
+<view class="container" class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="userinfo_first" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击获取个性界面 </button>
+    <block wx:else>
+      <!--<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>-->
+      <image class="userinfo-avatar" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531226373829&di=d9d060eb04188fc86719745fdb348aae&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fa%2F59b74bdba14d1.jpg" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}，做时间的朋友</text>
+
+      <view>
+        <text class="user-motto">{{motto[motto_index]}}</text>
+      </view>
+      <view>
+         <button class="b_change_motto" bindtap="bindViewTap"> 换一句 </button>
+      </view>
+
+      <view class="info_split">
+         <text class="info_split"> ---------------------------------------------------- </text>
+      </view>
+      <view class="bound_info">
+         <text class="bound_info"> {{name}} :  </text>
+         <block wx:if="{{cur_percent < 0}}">
+            <text class="bound_info_desc"> {{cur_price}}<text class="bound_info">,</text> {{cur_desc}}<text class="bound_info">,</text> {{cur_percent}}<text class="bound_info">。</text>\n</text>
+         </block>
+         <block wx:else>
+            <text class="bound_info_ins"> {{cur_price}}<text class="bound_info">,</text> +{{cur_desc}}<text class="bound_info">,</text> +{{cur_percent}}<text class="bound_info">。</text>\n</text>
+         </block>
+
+         <text class="bound_info"> {{name_sz}} : </text>
+         <block wx:if="{{cur_percent_sz < 0}}">
+            <text class="bound_info_desc"> {{cur_price_sz}}<text class="bound_info">,</text> {{cur_dec_sz}}<text class="bound_info">,</text> {{cur_percent_sz}}<text class="bound_info">。</text>\n</text>
+         </block>
+         <block wx:else>
+            <text class="bound_info_ins"> {{cur_price_sz}}<text class="bound_info">,</text> +{{cur_dec_sz}}<text class="bound_info">,</text> +{{cur_percent_sz}}<text class="bound_info">。</text>\n</text>
+         </block>
+
+         <text class="bound_info"> {{name_cy}} : </text>
+         <block wx:if="{{cur_percent_cy < 0}}">
+            <text class="bound_info_desc"> {{cur_price_cy}}<text class="bound_info">,</text> {{cur_dec_cy}}<text class="bound_info">,</text> {{cur_percent_cy}}<text class="bound_info">。</text>\n</text>
+         </block>
+         <block wx:else>
+            <text class="bound_info_ins"> {{cur_price_cy}}<text class="bound_info">,</text> +{{cur_dec_cy}}<text class="bound_info">,</text> +{{cur_percent_cy}}<text class="bound_info">。</text>\n</text>
+         </block>
+      </view>
+
+      <view class="info_split">
+         <text class="info_split"> ---------------------------------------------------- </text>
+      </view>
+
+      <view class="day_info">
+          <block wx:if='{{l_term == "" || l_term == null}}'>
+            <text class="day_info">【{{day_info}}，农历 {{i_month_cn}}{{l_day_cn}}】</text>
+          </block>
+          <block wx:else>
+            <text class="day_info">【{{day_info}}，农历 {{i_month_cn}}{{l_day_cn}} {{l_term}}】</text>
+          </block>
+      </view>
+
+      <view class="cur_time">
+        <text class="cur_time">{{cur_time}}</text>
+      </view>
+
+      <view class="remain_title">
+        <text class="remain_title"> 2019 年第 {{365 - remain_days}} 天, 2019 年仅剩下 </text>
+      </view>
+
+      <view class="remain_percent">
+        <text class="remain_percent"> {{remain_percent}}% </text>
+      </view>
+
+      <view class="remain_days">
+        <text class="remain_days"> = {{remain_days}} 天</text>
+      </view>
+
+      <view class="remain_hours">
+        <text class="remain_hours"> = {{remain_hours}} 小时</text>
+      </view>
+
+      <view class="fesval_info">
+          <block>
+            <text class="fesval_info">距离 2019 年春节，还有 : {{i_fesval_remain_days}} 天</text>
+          </block>
+      </view>
+
+      <view class="info_split">
+         <text class="info_split"> ---------------------------------------------------- </text>
+      </view>
+
+      <view class="goddes_value">
+        <text class="other_refer">开心指数：</text><text> {{today_stars}} </text>
+      </view>
+      <view class="other_info">
+        <text class="other_refer">今日宜饮：</text><text> {{today_driks}} </text>
+      </view>
+    </block>
+  </view>
+
+  <view class="out_link">
+      <button class='recommend_read' bindtap='pmp_exam'>PMP考试</button><button class='recommend_read' bindtap='others_exam'>其他考试</button> <button class='recommend_read' bindtap='recommend_read'>了解更多</button>
+  </view>
+
+
+</view>
+
+

@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/more/more",
+    "pages/pmp/pmp",
+    "pages/aboutxinrui/aboutxinrui",
+    "pages/others/others"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "2019年倒计时",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f0f0f0",
+    "navigationBarTextStyle":"black"
+  }
+}
